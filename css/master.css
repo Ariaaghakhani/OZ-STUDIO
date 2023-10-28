@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: montreal;
+    src: url(../font/PPNeueMontreal-Regular.woff);
+}
+
+@font-face {
+    font-family: montreal-bold;
+    src: url(../font/PPNeueMontreal-Bold.woff);
+}
+
+
+main{
+    background-image: url(../img/01.jpg);
+}
