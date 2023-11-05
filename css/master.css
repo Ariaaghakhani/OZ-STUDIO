@@ -14,7 +14,118 @@
     src: url(../font/PPNeueMontreal-Bold.woff);
 }
 
+@keyframes anim_blink {
+    0% {
+        opacity: 0;
+    }
 
-main{
-    background-image: url(../img/01.jpg);
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: anim_blink 1.2s cubic-bezier(.4, 0, .6, 1) infinite;
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.animate-load {
+    animation: loader 5s ease-in-out;
+}
+
+@keyframes loader-img {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-load-img {
+    animation: loader-img 15s linear infinite;
+}
+
+
+
+@keyframes img1 {
+
+    0%,
+    30%,
+    100% {
+        opacity: 1;
+    }
+
+    37.5% {
+        opacity: 0;
+    }
+
+    37.5000000000001%,
+    97% {
+        opacity: 0;
+    }
+}
+
+@keyframes img2 {
+
+    37.5%,
+    63% {
+        opacity: 1;
+    }
+
+    69% {
+        opacity: 0;
+    }
+
+    69.000000001%,
+    30%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes img3 {
+    63% {
+        opacity: 0;
+    }
+
+    69%,
+    97% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes slider{
+    0%,30%,100%{left: 0%;}
+
+    36%,63%{left: -107%;}
+
+    69%,97%{left: -214%;}
 }
