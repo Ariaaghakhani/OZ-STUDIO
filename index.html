@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -8,47 +8,50 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <!-- <link rel="stylesheet" href="../dist/output.css"> -->
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <style>
-    .img1 {
+    /* .img1 {
         background-image: url(img/01.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-    }
+        background-position: center
+    } */
 </style>
 
-<body class="w-full 2xl:container">
+<body class="w-full 2xl:container bg-wht mx-auto">
 
     <!-- Main Tag -->
 
-    <main class="h-[100vh] w-full overflow-y-scroll mx-auto text-sm lg:text-base">
+    <main class="h-[100vh] overflow-y-scroll mx-auto text-sm lg:text-base overflow-x-hidden 2xl:container lg:mx-auto" id="top">
 
         <!-- Nav Bar and Logo -->
 
-        <section class="navBar w-full fixed flex flex-wrap justify-between items-center px-3 py-4  top-0 left-0 z-50">
-            <div class="w-[40%] lg:hidden block ms-4">
+        <section
+            class="navBar w-full fixed flex flex-wrap justify-between items-center px-3 md:px-6 lg:px-10 py-4 top-0 left-0 z-40">
+            <div class="w-[40%] lg:hidden block ">
                 <div
-                    class="btn w-[80px] flex flex-wrap justify-center [border:1px_solid_white;] text-wht rounded-[30px] group hover:bg-white duration-300">
+                    class="btn w-[80px] flex flex-wrap justify-center [border:1px_solid_white;] text-wht rounded-[30px] group hover:bg-white duration-300 relative z-10">
                     <a class="group-hover:text-black duration-300 w-full h-full mx-4 py-1" href="">CONTACT</a>
                 </div>
             </div>
-            <span class="w-[40%] hidden lg:flex font-prime h-full py-6 ps-6 text-base items-center text-wht">NEXT DROP
+            <span class="dropSpan w-[40%] hidden lg:flex font-prime h-full py-6 text-base items-center text-wht ">NEXT
+                DROP
                 06 <span class="animate-blink mx-[1px]">:</span> 30PM
                 17.10.23</span>
-            <div class="logo flex justify-center items-center h-full -ms-4 lg:ms-0 relative z-50">
-                <svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 64">
-                    <path
-                        d="M16.5549 60.5809C20.4937 60.5851 24.4062 60.59 28.3751 60.5961V64.0001H10.4668L22.4038 43.3984H10.4882V39.9927H27.4576C27.8099 39.9927 28.1622 39.9914 28.5108 39.9866C24.5451 46.8639 20.5322 53.7127 16.5543 60.5809H16.5549Z M19.4683 24.9877C12.5527 24.9877 6.92578 19.3831 6.92578 12.4935C6.92578 5.604 12.5521 0 19.4683 0C26.3845 0 32.0102 5.60461 32.0102 12.4942C32.0102 19.3837 26.3839 24.9883 19.4683 24.9883V24.9877ZM19.4683 3.42954C14.4512 3.42954 10.3692 7.49576 10.3692 12.4935C10.3692 17.4913 14.4512 21.5575 19.4683 21.5575C24.4854 21.5575 28.5674 17.4913 28.5674 12.4935C28.5674 7.49576 24.4854 3.42954 19.4683 3.42954Z M39 31.0242H0V32.1812H39V31.0242Z"
-                        fill="#fff" />
-                </svg>
+            <div class="logo flex justify-center items-center h-full -ms-4 lg:ms-0 relative z-50 ">
+                <a href="" id="top"><svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 64">
+                        <path
+                            d="M16.5549 60.5809C20.4937 60.5851 24.4062 60.59 28.3751 60.5961V64.0001H10.4668L22.4038 43.3984H10.4882V39.9927H27.4576C27.8099 39.9927 28.1622 39.9914 28.5108 39.9866C24.5451 46.8639 20.5322 53.7127 16.5543 60.5809H16.5549Z M19.4683 24.9877C12.5527 24.9877 6.92578 19.3831 6.92578 12.4935C6.92578 5.604 12.5521 0 19.4683 0C26.3845 0 32.0102 5.60461 32.0102 12.4942C32.0102 19.3837 26.3839 24.9883 19.4683 24.9883V24.9877ZM19.4683 3.42954C14.4512 3.42954 10.3692 7.49576 10.3692 12.4935C10.3692 17.4913 14.4512 21.5575 19.4683 21.5575C24.4854 21.5575 28.5674 17.4913 28.5674 12.4935C28.5674 7.49576 24.4854 3.42954 19.4683 3.42954Z M39 31.0242H0V32.1812H39V31.0242Z"
+                            fill="#fff" />
+                    </svg></a>
             </div>
 
             <!-- Menu -->
 
-            <div class="nav w-[40%] h-full flex flex-wrap justify-end items-center py-4 text-wht pe-4 xl:pe-8">
+            <div class="nav w-[40%] h-full flex flex-wrap justify-end items-center py-8 text-wht  xl:pe-0">
                 <ul class="hidden lg:flex flex-wrap gap-x-6 h-full items-center ">
                     <li
                         class="relative duration-300 after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-wht hover:after:w-full after:duration-300">
@@ -63,22 +66,24 @@
                         <a class="group-hover:text-black duration-300 w-full h-full mx-2 py-1" href="">CONTACT</a>
                     </li>
                 </ul>
-                <div
-                    class="menuBtn flex lg:hidden flex-wrap justify-between items-center border rounded-[30px] relative z-50">
-                    <div class="absolute left-4">
-                        <span class=" w-[30px] h-[1px] block bg-wht absolute translate-y-[-3px] duration-300"></span>
-                        <span class=" w-[30px] h-[1px] block bg-wht absolute  duration-300"></span>
-                        <span class=" w-[30px] h-[1px] block bg-wht absolute translate-y-[3px] duration-300"></span>
+                <div class="menuBtn flex lg:hidden flex-wrap justify-between items-center border rounded-[30px] relative"
+                    style="z-index: 100;">
+                    <div class="absolute left-[0.675rem]">
+                        <span class=" w-[24px] h-[1px] block bg-wht absolute translate-y-[-3px] duration-300"></span>
+                        <span class=" w-[24px] h-[1px] block bg-wht absolute  duration-300"></span>
+                        <span class=" w-[24px] h-[1px] block bg-wht absolute translate-y-[3px] duration-300"></span>
                     </div>
                     <a
-                        class="group-hover:text-black w-full h-full ps-16 py-1 pe-4 relative cursor-pointer duration-300">MENU</a>
+                        class="group-hover:text-black w-full h-full ps-10 py-1 pe-2 relative cursor-pointer duration-300">MENU</a>
                 </div>
             </div>
+        </section>
 
-            <!-- Menu Mobile -->
+        <!-- Menu Mobile -->
 
-            
-            <div class="menu w-full h-[100vh] flex lg:hidden absolute top-0 left-0 bg-[#82121f] opacity-0 invisible duration-300 z-10">
+        <section>
+            <div
+                class="menu w-full h-[100vh] flex lg:hidden fixed top-0 left-0 bg-mrn opacity-0 invisible duration-300 z-30">
                 <div class="absolute w-[150px] top-0 left-0">
                     <span
                         class="drop flex flex-wrap lg:hidden font-prime h-full pt-6 ps-4 items-center text-wht absolute -top-20 duration-1000 ease-in-out text-sm">NEXT
@@ -88,7 +93,8 @@
                         <span class="animate-blink mx-[1px]">:</span> 30PM
                         17.10.23</span>
                 </div>
-                <ul class="mobileMenuList w-full relative top-[105%] left-0 px-3 text-wht text-[6vw] font-extrabold m-0 p-0 duration-1000">
+                <ul
+                    class="mobileMenuList w-full relative top-[105%] left-0 px-3 text-wht text-[6vw] font-extrabold m-0 p-0 duration-1000">
                     <li class="w-full relative h-[5vh] flex items-center "><a href=""
                             class="w-full h-full flex flex-wrap justify-start items-center relative z-10">SERVICES</a><i
                             class="bi bi-arrow-right absolute right-0 z-9"></i></li>
@@ -103,6 +109,7 @@
                         </div>
                     </li>
                 </ul>
+
             </div>
         </section>
 
@@ -111,7 +118,7 @@
         <header class="h-[100vh] w-full">
             <section class="w-full h-full flex flex-wrap lg:justify-end relative">
                 <div
-                    class="h-full w-full lg:w-1/2 flex flex-wrap content-end my-0 px-8 lg:px-2  justify-start lg:justify-end">
+                    class="h-full w-full lg:w-1/2 flex flex-wrap content-end my-0 px-3 md:px-6 lg:px-10 pb-2 justify-start lg:justify-end">
                     <h1
                         class="w-full md:w-[63%] lg:w-full lg:justify-end text-wht text-2xl md:text-[clamp(24px,1.1072rem+1.6114vw,58px);] lg:text-[clamp(24px,1.22rem+1.14vw,48px)] leading-none pb-16">
                         <strong>OZ — STUDIO</strong>
@@ -154,7 +161,7 @@
                         <!-- Slider And Slideshow for Mobile-->
 
                         <section
-                            class="slideInfo w-full absolute h-full bottom-0 z-40 text-wht flex lg:hidden [animation:slider_15s_infinite]">
+                            class="slideInfo w-full absolute h-full bottom-0 z-10 text-wht flex lg:hidden [animation:slider_15s_infinite]">
                             <div class="w-full absolute left-[0] flex flex-wrap justify-end">
                                 <div class="w-[80%] h-full py-4 capitalize">
                                     <p class="mb-4 duration-300 hover:duration-300 lg:hidden block text-base">personal
@@ -171,7 +178,7 @@
                                     <p class="mb-4 duration-300 hover:duration-300 lg:hidden block text-base">online
                                         coaching</p>
                                     <a class="group-hover:opacity-100 hover:text-black duration-300 hover:bg-wht hover:duration-300 w-full h-full px-2 py-1 uppercase rounded-[30px] border lg:hidden inline"
-                                        href="">submit interest</a>
+                                        href="">read more</a>
                                 </div>
                                 <span class="w-[20%] h-full text-base flex justify-end py-4">02/03</span>
                             </div>
@@ -182,7 +189,7 @@
                                     <p class="mb-4 duration-300 hover:duration-300 lg:hidden block text-base">boot-camp
                                     </p>
                                     <a class="group-hover:opacity-100 hover:text-black duration-300 hover:bg-wht hover:duration-300 w-full h-full px-2 py-1 uppercase rounded-[30px] border lg:hidden inline "
-                                        href="">read more</a>
+                                        href="">submit interest</a>
                                 </div>
                                 <span class="w-[20%] h-full text-base flex justify-end py-4">03/03</span>
                             </div>
@@ -193,17 +200,307 @@
                 <!-- Slider Backgroun Images -->
 
                 <div class="img1 w-full h-full absolute top-0 left-0 z-[-100] [animation:img1_15s_ease-in-out_infinite]"
-                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/01.jpg);">
+                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/01.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
                 </div>
                 <div class="img1 w-full h-full absolute top-0 left-0 z-[-101] [animation:img2_15s_ease-in-out_infinite]"
-                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/02.jpg);">
+                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/02.jpg);
+                    background-size: cover; background-repeat: no-repeat; background-position: center;">
                 </div>
                 <div class="img1 w-full h-full absolute top-0 left-0 z-[-102] [animation:img3_15s_ease-in-out_infinite]"
-                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/03.jpg);">
+                    style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),url(img/03.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
                 </div>
             </section>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </header>
+
+        <!-- About  -->
+
+        <section class="about w-full pt-12 px-3 md:px-6 lg:px-10 pb-20 text-blk bg-wht">
+            <p class="w-full">OZ—STUDIO™</p>
+            <h2
+                class="w-full lg:w-[66%] text-[4.8vw] leading-6 lg:text-[3vw] xl:text-[2.8vw] lg:leading-[3rem] sm:leading-8 indent-28 mt-8">
+                Welcome to OZ studio, where passion, strength, endurance and progress meet and are designed to inspire
+                greatness. Step into a world where health and well-being come into focus and where every workout is a
+                step towards unlocking your full potential.</h2>
+        </section>
+
+        <!-- Services -->
+
+        <section class="services w-full px-3 md:px-6 lg:px-10 mb-20 ">
+            <div class="servTitle w-full">
+                <div class="flex flex-wrap justify-between uppercase">
+                    <h3 class="font-extrabold text-[24px] md:text-[28px] lg:text-[32px] flex justify-start">
+                        services<span
+                            class="font-normal text-[10px] md:text-[12px] lg:text-[14px] block -translate-y-2">7</span>
+                    </h3>
+                    <div
+                        class="w-fit flex flex-wrap justify-center [border:1px_solid_#161615;] text-blk rounded-[30px] group hover:bg-blk duration-300">
+                        <a class="group-hover:text-wht duration-300 w-full h-full mx-4 py-1" href="">SEE ALL
+                            SERVICES</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Gallery  -->
+
+            <div class="servGallery w-full flex flex-wrap grow justify-between pt-6 gap-6 ">
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/01.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            personal training</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">Achieve your dream goals and maximize
+                            your potential with the highest quality personal training</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/05.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            company training</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">Give your business a healthy kick with
+                            specially adapted business training!</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/03.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            boot—camp</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">Do you want a boost in your training
+                            life? Then this training booztcamp is the perfect choice for you!</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/02.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            online coaching</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">With online coaching, you get access
+                            to both a coach and diet/training plan that fits your needs and goals.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/06.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            dietary advice</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">Get help with a personalized diet plan
+                            that is tailored to your specific goals and preferences.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="w-[49%] flex flex-wrap grow border-blk rounded-3xl pt-6 ps-6 group cursor-pointer relative overflow-hidden group">
+                    <figure
+                        class="w-full absolute top-0 left-0 -z-10 duration-300 group-hover:scale-[1.03] hover:duration-300 after:absolute after:w-full after:h-full after:bg-black after:opacity-20 after:top-0 after:left-0">
+                        <img src="img/04.jpg" alt="">
+                    </figure>
+                    <div
+                        class="w-fit flex flex-wrap justify-center items-center [border:1px_solid_#f5f5f0;] text-wht rounded-[30px] group-hover:bg-wht duration-300">
+                        <a class="group-hover:text-blk duration-300 w-full h-full px-4 py-1" href="">READ MORE</a>
+                    </div>
+                    <span class="w-full md:h-72 h-36 xl:h-80 block"></span>
+                    <div class="w-full pb-6 text-wht leading-tight">
+                        <h3
+                            class="w-2/3 uppercase  text-[4vw] md:text-[3vw] lg:text-[3vw] xl:text-[2vw] font-extrabold">
+                            RUN—CAMP</h3>
+                        <p class="w-3/5 text-[3vw] md:text-[3vw] lg:text-[1.2vw]">RUN—CAMP is the ultimate way to
+                            achieve your running goals!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animated Text Large-->
+
+        <section class="w-[4813.68px] pt-12 pb-12 hidden lg:block mb-20">
+            <div class="w-full pt-12 pb-12 relative flex animation">
+                <div class="w-fit absolute inline font-extrabold text-[144px]">OZ—STUDIO – BY EMELIE OROSZ —</div>
+                <div class="w-fit absolute inline font-extrabold text-[144px] translate-x-[100%]">OZ—STUDIO – BY EMELIE
+                    OROSZ —</div>
+            </div>
+        </section>
+
+        <!-- Animated Text Small-->
+
+        <section class="w-[2674.28px] pt-12 pb-12 lg:hidden block">
+            <div class="w-full pt-12 pb-12 relative flex animation">
+                <div class="w-fit absolute inline font-extrabold text-[80px]">OZ—STUDIO – BY EMELIE OROSZ —</div>
+                <div class="w-fit absolute inline font-extrabold text-[80px] translate-x-[100%]">OZ—STUDIO – BY EMELIE
+                    OROSZ —</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+
+        <section class="contact w-full px-3 md:px-6 lg:px-10 relative overflow-hidden mb-24">
+            <div class="w-full bg-bej rounded-3xl pt-40 flex flex-wrap mx-auto justify-center relative overflow-hidden">
+                <p class="w-full text-center text-lg text-wht mb-20">Founder – Emelie Orosz</p>
+                <div class="w-full flex justify-center">
+                    <figure class="w-4/5 lg:w-1/3 rounded-3xl overflow-hidden object-cover mb-8 relative z-10">
+                        <img src="img/found.jpg" alt="">
+                    </figure>
+                </div>
+
+                <p class="w-4/5 lg:w-1/4 text-lg text-wh mb-8 text-wht relative z-10">
+                    I believe in a holistic approach to health where both physical strength, mental resilience and
+                    general well-being are seen in balance. I understand that each individual is unique and therefore
+                    tailor my training and nutrition programs to suit my clients' own specific goals, abilities and
+                    preferences.
+                </p>
+
+                <div class="w-full flex justify-center mb-20 relative z-10">
+                    <div
+                        class="w-4/5 lg:w-1/3 mx-auto flex justify-center items-center border overflow-hidden rounded-[30px] h-full group ">
+                        <a href="#"
+                            class="text-wht hover:text-blk hover:bg-wht py-3 font-extrabold text-3xl w-full h-full flex justify-center items-center duration-300 hover:duration-300">CONTACT
+                            ME</a>
+                    </div>
+                </div>
+
+                <!-- Animated Circle -->
+
+                <div class="svg1 absolute lg:justify-self-end -left-[15%] md:-left-[5%] lg:left-40 top-[40%] lg:top-[10%] w-auto z-0"
+                    style="transform:translateY(130%);">
+                    <svg class="fill-none h-auto w-auto" width="394" height="394" viewBox="0 0 394 394">
+                        <circle class="stroke-[36px] lg:stroke-[40px] stroke-mrn" cx="197" cy="197" r="177"
+                            stroke-width="40" vector-effect="non-scaling-stroke"></circle>
+                    </svg>
+                </div>
+
+                <div class="svg2 absolute top-[5%] right-6 lg:right-72 lg:top-1/3 w-auto z-0"
+                    style="margin-top: 0px; opacity: 1; transform:translate(90%,200%);">
+                    <svg class="fill-none h-auto w-auto" width="255" height="255" viewBox="0 0 255 255">
+                        <circle class="stroke-[28px] lg:stroke-[40px] stroke-mrn" cx="127.5" cy="127.5" r="107.5"
+                            stroke="currentColor" stroke-width="40" vector-effect="non-scaling-stroke"></circle>
+                    </svg>
+                </div>
+
+                <!-- Animated Text -->
+
+                <div
+                    class="sweat absolute text-5xl lg:text-6xl font-extrabold text-wht uppercase w-full top-1/4 lg:top-[24%] whitespace-nowrap  col-span-full flex flex-col gap-y-14 lg:gap-y-28 z-20">
+                    <span class="absolute self-end lg:right-10" style="transform:translateX(0%);">
+                        SWEAT—SMILE—REPEAT
+                    </span>
+                    <span class="ml-20 lg:ml-40 text-right" style="transform:translate(80%,700%);">
+                        SWEAT—SMILE—REPEAT
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Animated Text Large-->
+
+        <section class="w-[4813.68px] pt-12 pb-12 hidden lg:block mb-20">
+            <div class="w-full pt-12 pb-12 relative flex animation">
+                <div class="w-fit absolute inline font-extrabold text-[144px]">OZ—STUDIO – BY EMELIE OROSZ —</div>
+                <div class="w-fit absolute inline font-extrabold text-[144px] translate-x-[100%]">OZ—STUDIO – BY EMELIE
+                    OROSZ —</div>
+            </div>
+        </section>
+
+        <!-- Animated Text Small-->
+
+        <section class="w-[2674.28px] pt-12 pb-12 lg:hidden block">
+            <div class="w-full pt-12 pb-12 relative flex animation">
+                <div class="w-fit absolute inline font-extrabold text-[80px]">OZ—STUDIO – BY EMELIE OROSZ —</div>
+                <div class="w-fit absolute inline font-extrabold text-[80px] translate-x-[100%]">OZ—STUDIO – BY EMELIE
+                    OROSZ —</div>
+            </div>
+        </section>
+
+        <footer class="w-full flex flex-wrap justify-between items-end px-3 md:px-6 lg:px-10 py-4 text-blk">
+
+            <ul class="w-[40%] hidden lg:flex font-prime h-full text-base justify-between items-end text-blk">
+                <li
+                    class="relative duration-300 after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-blk hover:after:w-full after:duration-300">
+                    <a href="">INSTAGRAM</a>
+                </li>
+                <li
+                    >
+                    OZ—STUDIO 2023© BY <a class="relative duration-300 after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-blk hover:after:w-full after:duration-300" href="">ARIA AG</a>
+                </li>
+            </ul>
+            <div class="logo flex justify-center items-end h-full -ms-4 lg:ms-0 relative z-50 ">
+                <a href="" id="top"><svg class="w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 64">
+                        <path
+                            d="M16.5549 60.5809C20.4937 60.5851 24.4062 60.59 28.3751 60.5961V64.0001H10.4668L22.4038 43.3984H10.4882V39.9927H27.4576C27.8099 39.9927 28.1622 39.9914 28.5108 39.9866C24.5451 46.8639 20.5322 53.7127 16.5543 60.5809H16.5549Z M19.4683 24.9877C12.5527 24.9877 6.92578 19.3831 6.92578 12.4935C6.92578 5.604 12.5521 0 19.4683 0C26.3845 0 32.0102 5.60461 32.0102 12.4942C32.0102 19.3837 26.3839 24.9883 19.4683 24.9883V24.9877ZM19.4683 3.42954C14.4512 3.42954 10.3692 7.49576 10.3692 12.4935C10.3692 17.4913 14.4512 21.5575 19.4683 21.5575C24.4854 21.5575 28.5674 17.4913 28.5674 12.4935C28.5674 7.49576 24.4854 3.42954 19.4683 3.42954Z M39 31.0242H0V32.1812H39V31.0242Z"
+                            fill="#161615" />
+                    </svg></a>
+            </div>
+
+            <!-- Menu -->
+
+            <div class="nav w-[40%] h-full flex flex-wrap justify-end items-end text-blk  xl:pe-0">
+                <ul class="hidden lg:flex flex-wrap gap-x-6 h-full items-end ">
+                    <li
+                        class="relative duration-300   after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-blk hover:after:w-full after:duration-300">
+                        <a href="">SERVICES</a>
+                    </li>
+                    <li
+                        class="relative duration-500 after:absolute after:w-0 after:h-[1px] after:left-0 after:bottom-0 after:bg-blk hover:after:w-full after:duration-500">
+                        <a href="">ABOUT OZ—STUDIO</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </main>
 </body>
 <script src="js/master.js"></script>

@@ -129,3 +129,13 @@
 
     69%,97%{left: -214%;}
 }
+
+
+@keyframes text {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50%);}
+}
+
+.animation{
+    animation: text 20s infinite linear;
+}
