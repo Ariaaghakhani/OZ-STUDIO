@@ -10,7 +10,7 @@
 
 - 🔗 [Demo Project](https://ariaaghakhani.github.io/OZ-STUDIO/)
 
-- 👨🏻‍💻 Developed by pouria farahani
+- 👨🏻‍💻 Developed by Aria AG
   
 - 🖥️ Created - 2023 Nov 10
   
